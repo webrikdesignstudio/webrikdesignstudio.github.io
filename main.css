@@ -384,7 +384,7 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Manrope", sans-serif;
+  font-family: "DMSans", sans-serif;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -10938,16 +10938,22 @@ a.text-dark:focus {
 }
 
 .jumbotron .container {
-  max-width: 50rem;
+  max-width: 60%;
   z-index: 3;
   position: relative;
   margin-top: 5rem;
 }
-
-.jumbotron .container h1 {
+.jumbotron .container h6 {
+  font-size: 2rem;
+  opacity: 0.5;
+  margin-bottom: 0rem!important;
+}
+.jumbotron .container h1,
+.jumbotron .container h6 {
   color: #222222;
   margin-bottom: 3rem;
-  display: inline-block;
+  display: flex;
+  text-align: left;
 }
 
 .jumbotron .container p.lead {
@@ -10957,7 +10963,7 @@ a.text-dark:focus {
 
 .jumbotron .jumbotron-heading {
   font-weight: 400;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .jumbotron .search-form {
@@ -11168,7 +11174,8 @@ a.text-dark:focus {
 }
 
 .navbar .navbar-brand img {
-  max-height: 50px;
+  max-height: 100px;
+  margin-top: -50px;
 }
 
 .navbar .navbar-nav .nav-item a.nav-link:not(.solid-btn) {
